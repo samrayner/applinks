@@ -5,8 +5,8 @@
         "appIDs": ["5K2BRZY936.com.jcb.LiveLinkUAT", "5K2BRZY936.com.jcb.LiveLinkProd"],
         "components": [
           {
-            "/": "/open/*",
-            "comment": "Matches any URL whose path starts with /open/"
+            "/": "/case/*",
+            "comment": "Matches any URL whose path starts with /case/"
           }
         ]
       }
