@@ -1,15 +1,15 @@
 {
-  "appLinks": {
-    "details": [
-      {
-        "appIDs": ["5K2BRZY936.com.jcb.LiveLinkUAT", "5K2BRZY936.com.jcb.LiveLinkProd"],
-        "components": [
-          {
-            "/": "/cases/*",
-            "comment": "Matches any URL whose path starts with /cases/"
-          }
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "5K2BRZY936.com.jcb.LiveLinkUAT",
+                "paths": [ "/cases/*"]
+            },
+            {
+                "appID": "5K2BRZY936.com.jcb.LiveLinkProd",
+                "paths": [ "/cases/*"]
+            }
         ]
-      }
-    ]
-  }
+    }
 }
