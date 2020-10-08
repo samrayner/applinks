@@ -4,11 +4,11 @@
         "details": [
             {
                 "appID": "5K2BRZY936.com.jcb.LiveLinkUAT",
-                "paths": ["/home", "/uptime/case", "/fleet"]
+                "paths": ["/home", "/fleet", "/notifications", "/auth"]
             },
             {
                 "appID": "5K2BRZY936.com.jcb.LiveLinkProd",
-                "paths": ["/home", "/uptime/case", "/fleet"]
+                "paths": ["/home", "/fleet", "/notifications", "/auth"]
             }
         ]
     }
