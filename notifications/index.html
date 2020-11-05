@@ -11,10 +11,14 @@
 
     window.onload = function() {
       document.getElementById("applink").addEventListener("click", sendMessage);
+
+      document.getElementById("userAgent").innerHTML = navigator.userAgent;
     }
   </script>
 </head>
 <body>
   <h2><a href="#" id="applink">OPEN FLEET TAB</a></h2>
+
+  <p id="userAgent"></p>
 </body>
 </html>
