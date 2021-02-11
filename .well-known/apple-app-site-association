@@ -1,14 +1,42 @@
 {
     "applinks": {
-        "apps": [],
         "details": [
             {
-                "appID": "5K2BRZY936.com.jcb.LiveLinkUAT",
-                "paths": ["/home", "/fleet", "/notifications", "/auth"]
-            },
-            {
-                "appID": "5K2BRZY936.com.jcb.LiveLinkProd",
-                "paths": ["/home", "/fleet", "/notifications", "/auth"]
+                "appIDs": [
+                    "5K2BRZY936.com.jcb.livelink",
+                    "5K2BRZY936.com.jcb.livelink-uat"
+                ],
+                "components": [
+                    {
+                        "#": "no_universal_links",
+                        "exclude": true,
+                        "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+                    },
+                    {
+                        "/": "/fleet/*",
+                        "comment": "Matches any URL whose path starts with /fleet/"
+                    },
+                    {
+                        "/": "/cases/*",
+                        "comment": "Matches any URL whose path starts with /cases/"
+                    },
+                    {
+                        "/": "/operators/*",
+                        "comment": "Matches any URL whose path starts with /operators/"
+                    },
+                    {
+                        "/": "/sites/*",
+                        "comment": "Matches any URL whose path starts with /sites/"
+                    },
+                    {
+                        "/": "/analytics/*",
+                        "comment": "Matches any URL whose path starts with /analytics/"
+                    },
+                    {
+                        "/": "/dealer/*",
+                        "comment": "Matches any URL whose path starts with /dealer/"
+                    }
+                ]
             }
         ]
     }
