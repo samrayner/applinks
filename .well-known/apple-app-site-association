@@ -13,6 +13,14 @@
                         "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
                     },
                     {
+                        "/": "/",
+                        "comment": "Matches the root URL"
+                    },
+                    {
+                        "/": "/overview/*",
+                        "comment": "Matches any URL whose path starts with /overview/"
+                    },
+                    {
                         "/": "/fleet/*",
                         "comment": "Matches any URL whose path starts with /fleet/"
                     },
