@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="110px" viewBox="0 0 190 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Group" transform="translate(47.000000, 2.100000)" stroke-width="3">
+            <polygon id="Path" stroke="#9FA09E" stroke-linecap="round" points="0 34.9 0 80.6791679 40 103.9 40 57.7040058"></polygon>
+            <polygon id="Path-3" stroke="#979797" points="53 103.9 53 57.7040058 93 34.9 93 80.6791679"></polygon>
+            <polygon id="Path-2" stroke="#979797" stroke-linecap="round" points="7 23.6796682 46.5084851 46.9 86 23.7410162 46.5084851 0.9"></polygon>
+        </g>
+    </g>
+</svg>
