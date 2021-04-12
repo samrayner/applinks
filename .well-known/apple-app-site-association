@@ -3,7 +3,7 @@
         "details": [
             {
                 "appIDs": [
-                    "5K2BRZY936.com.jcb.livelink",
+                    "5K2BRZY936.com.jcb.livelink-live",
                     "5K2BRZY936.com.jcb.livelink-uat"
                 ],
                 "components": [
@@ -11,14 +11,6 @@
                         "#": "no_universal_links",
                         "exclude": true,
                         "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
-                    },
-                    {
-                        "/": "/",
-                        "comment": "Matches the root URL"
-                    },
-                    {
-                        "/": "/overview/*",
-                        "comment": "Matches any URL whose path starts with /overview/"
                     },
                     {
                         "/": "/fleet/*",
