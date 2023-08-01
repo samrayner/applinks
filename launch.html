@@ -59,14 +59,17 @@ https://applinks.samrayner.com/launch.html?title=Launch&schemeUrl=googlecalendar
 
 
     if (window.navigator.standalone) {
-        setTimeout(function() {
-            const launchLink = document.getElementById('launch');
-            launchLink.click();
+        const launchLink = document.getElementById('launch');
 
-            setInterval(function() {
-                launchLink.click();
-            }, 250);
+        setTimeout(function() {
+            launchLink.click();
         }, 25);
+
+        document.addEventListener("visibilitychange", () => {
+            if (document.visibilityState == 'visible') {
+                launchLink.click();
+            }
+        });
     } else {
         document.body.classList.remove("launching");
     }
