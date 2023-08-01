@@ -1,0 +1,77 @@
+<!--
+https://applinks.samrayner.com/launch.html?title=Launch&schemeUrl=googlecalendar%3A%2F%2F&imageUrl=https%3A%2F%2Fsamrayner.com%2Fapple-touch-icon.png
+-->
+
+<html>
+<head>
+    <title>Loading…</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- 
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="apple-touch-startup-image" href="" media=""/>
+    -->
+
+    <style>
+    body {
+        font-family: -apple-system;
+        background-color: white;
+        color: black;
+    }
+
+    .launching * {
+        visibility: hidden;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: white;
+        }
+    }
+    </style>
+</head>
+<body>
+    <img id="icon" width="80" src="" />
+    <h1 id="title">Loading…</h1>
+    <p id="description">To add this app to your homescreen, tap the 'Share' icon, then tap 'Add to Home Screen'.</p>
+    <a id="launch" href="#launch"></a>
+
+    <script type="text/javascript">
+    const urlParams = new URL(window.location).searchParams;
+    const title = urlParams.get('title');
+    const schemeUrl = urlParams.get('schemeUrl');
+    const imageUrl = urlParams.get('imageUrl');
+
+    document.title = title
+    document.getElementById('title').innerHTML = title;
+
+    var iconLink = document.createElement("link");
+    iconLink.setAttribute('rel', 'apple-touch-icon-precomposed');
+    iconLink.setAttribute('href', imageUrl);
+    document.getElementsByTagName('head')[0].appendChild(iconLink);
+
+    document.getElementById('launch').setAttribute('href', schemeUrl);
+    document.getElementById('icon').setAttribute('src', imageUrl);
+
+
+    if (window.navigator.standalone) {
+        setTimeout(function() {
+            const launchLink = document.getElementById('launch');
+            launchLink.click();
+
+            setInterval(function() {
+                launchLink.click();
+            }, 250);
+        }, 25);
+    } else {
+        document.body.classList.remove("launching");
+    }
+
+    </script>
+</body>
+</html>
+</body>
